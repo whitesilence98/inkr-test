@@ -1,0 +1,13 @@
+.tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4px;
+   &__item {
+      background: var(--card-bg-color);
+      border: 1px solid #434343;
+      border-radius: 4px;
+      display: inline-block;
+      padding: 2px 8px;
+      color: rgba(255, 255, 255, 0.65);
+   }
+}

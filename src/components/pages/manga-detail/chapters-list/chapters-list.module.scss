@@ -1,0 +1,18 @@
+.root {
+   .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+   }
+   .last-read {
+      background: #1f1f1f;
+      border-radius: 8px;
+      margin: 10px 12px 0;
+   }
+   .list {
+      .head {
+         padding: 23px 24px 8px;
+      }
+   }
+}

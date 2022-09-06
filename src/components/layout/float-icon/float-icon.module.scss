@@ -1,0 +1,19 @@
+.dark-light {
+   position: fixed;
+   bottom: 50px;
+   right: 30px;
+   background-color: var(--inactive-color);
+   box-shadow: -1px 3px 8px -1px rgb(0 0 0 / 20%);
+   padding: 8px;
+   border-radius: 50%;
+   z-index: 3;
+   cursor: pointer;
+   svg {
+      width: 24px;
+      flex-shrink: 0;
+      // fill: #ffce45;
+      fill: transparent;
+      stroke: var(--theme-primary-color);
+      transition: 0.5s;
+   }
+}

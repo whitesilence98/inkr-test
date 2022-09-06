@@ -1,0 +1,34 @@
+.root {
+   color: var(--theme-primary-color);
+   .main {
+      display: flex;
+      gap: 24px;
+      .image {
+         border-radius: 8px;
+         grid-area: thumbnail;
+         padding: 0;
+      }
+      .content-wrapper {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         flex: 1;
+         .content {
+            &__title {
+               width: 100%;
+               display: flex;
+               align-items: center;
+               h2 {
+                  flex: 1;
+               }
+            }
+            &__genres {
+               margin-top: 24.15px;
+            }
+            &__chapter {
+               margin: 6px 0;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,32 @@
+.chapter {
+   color: var(--theme-primary-color);
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   padding: 16px 24px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+   &:last-child {
+      margin-bottom: 17px;
+   }
+   .image {
+      border-radius: 4px;
+   }
+   .content {
+      flex: 1;
+      &__exclusive {
+         display: flex;
+         align-items: center;
+         gap: 4px;
+         h5 {
+            font-weight: 500;
+            color: #844cff;
+         }
+         svg {
+            fill: #844cff;
+         }
+      }
+   }
+   &:hover {
+      cursor: pointer;
+   }
+}

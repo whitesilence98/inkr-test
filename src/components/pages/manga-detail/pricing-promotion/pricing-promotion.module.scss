@@ -1,0 +1,101 @@
+.table {
+   margin-top: 16px;
+
+   .flex {
+      display: flex;
+      gap: 3px;
+      align-items: center;
+      margin-bottom: 3px;
+
+      .top {
+         &:first-child {
+            border-top-left-radius: 8px;
+         }
+         &:nth-child(2) {
+            border-top-right-radius: 8px;
+         }
+         &__lock {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+         }
+      }
+      .bottom {
+         border-bottom-left-radius: 8px;
+         border-bottom-right-radius: 8px;
+      }
+      .center,
+      .bottom {
+         display: flex;
+         .title {
+            flex: 1;
+         }
+      }
+
+      .center {
+         align-items: center;
+      }
+
+      .top,
+      .center,
+      .bottom {
+         flex: 1;
+         padding: 16px;
+         background-color: #1f1f1f;
+      }
+      .sale {
+         display: flex;
+         align-items: stretch;
+         &__percent {
+            background: #651fff;
+            border-radius: 8px 0px 0px 8px;
+            padding: 6px 8px;
+         }
+         &__price {
+            display: flex;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 0px 8px 8px 0px;
+            padding: 8px 16px;
+            span {
+               font-size: 12px;
+               line-height: 20px;
+               text-decoration: line-through;
+               color: rgba(255, 255, 255, 0.3);
+            }
+         }
+      }
+      .pricing-wrapper {
+         display: flex;
+         background: rgba(255, 255, 255, 0.08);
+         border-radius: 8px;
+         padding: 8px 16px;
+      }
+      .saving-note {
+         font-style: italic;
+         font-size: 12px;
+         line-height: 20px;
+         color: var(--theme-secondary-color);
+         float: right;
+      }
+      .purple {
+         display: flex;
+         align-items: center;
+         gap: 5px;
+         &__text {
+            font-size: 14px;
+            line-height: 22px;
+            color: #844cff;
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+.learn-more {
+   margin-top: 16px;
+   text-align: center;
+   p {
+      color: var(--theme-secondary-color);
+      cursor: pointer;
+   }
+}

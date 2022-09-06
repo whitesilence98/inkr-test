@@ -1,0 +1,14 @@
+.root {
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+   .item {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      &__avatar {
+         margin-right: 10px;
+      }
+   }
+}

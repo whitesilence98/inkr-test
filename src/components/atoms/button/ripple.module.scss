@@ -1,0 +1,41 @@
+%ripple {
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 0;
+   position: absolute;
+}
+
+.button_ripple {
+   overflow: hidden;
+   @extend %ripple;
+   border-radius: 8px;
+
+   &_item {
+      @extend %ripple;
+
+      pointer-events: none;
+      transform: scale(0);
+      animation: button-ripple 0.85s linear;
+      border-radius: 50%;
+      opacity: 0.4;
+
+      &--default {
+         background-color: #fff;
+      }
+      &--primary {
+         background-color: var(--primary-main-color);
+      }
+      &--secondary {
+         background-color: var(--secondary-main-color);
+      }
+   }
+}
+
+@keyframes button-ripple {
+   to {
+      transform: scale(2);
+      opacity: 0;
+   }
+}

@@ -1,0 +1,102 @@
+* {
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+      Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+   font-variant: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   color: var(--theme-default-color);
+   margin-bottom: 0;
+}
+
+figure {
+   margin: 0;
+}
+
+html,
+body {
+   margin: 0;
+   line-height: 1.5715;
+   background-color: #000;
+   -webkit-font-feature-settings: "tnum";
+   -moz-font-feature-settings: "tnum";
+   font-feature-settings: "tnum";
+}
+
+h2 {
+   font-size: 30px;
+   line-height: 40px;
+}
+
+h4 {
+   font-size: 20px;
+   line-height: 28px;
+}
+
+h5 {
+   font-size: 16px;
+   line-height: 24px;
+}
+
+p {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+span {
+   /* font-weight: 400; */
+   font-size: 11px;
+   line-height: 18px;
+}
+
+.bold {
+   font-weight: 500;
+}
+
+.text-primary {
+   color: var(--theme-primary-color);
+   opacity: 0.8;
+}
+
+.text-secondary {
+   color: var(--theme-secondary-color);
+}
+
+.text-dimmer {
+   color: var(--theme-dimmer-color);
+}
+
+:root {
+   --theme-default-color: rgba(255, 255, 255, 0.85);
+   --theme-primary-color: rgba(255, 255, 255, 0.65);
+   --theme-secondary-color: rgba(255, 255, 255, 0.45);
+   --theme-dimmer-color: #434343;
+   --theme-bg-color: #141414;
+   --button-primary-color: #141414;
+   --button-primary-bg-color: #ffd60a;
+   --card-bg-color: #141414;
+   --inactive-color: rgb(113 119 144 / 7);
+}
+
+[data-theme="light"] {
+   --theme-default-color: #3c3a3a;
+   --theme-primary-color: #434343;
+   --theme-secondary-color: #434343;
+   --theme-dimmer-color: rgba(255, 255, 255, 0.65);
+   --theme-bg-color: #ffffff;
+   --button-primary-color: #ffffff;
+   --button-primary-bg-color: #2196f3;
+   --card-bg-color: #ffffff;
+   --inactive-color: #fff;
+}

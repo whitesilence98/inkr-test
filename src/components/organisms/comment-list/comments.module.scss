@@ -1,0 +1,33 @@
+.root {
+   margin-top: 16px;
+   margin-bottom: 28px;
+}
+
+.comment-box {
+   display: flex;
+   color: var(--theme-primary-color);
+   gap: 12px;
+   margin-bottom: 12px;
+   .header {
+      display: flex;
+      gap: 16px;
+   }
+   .content {
+      flex: 1;
+      &__input {
+         background: #141414;
+         border: 1px solid #434343;
+         border-radius: 8px;
+         color: white;
+         padding: 5px 12px;
+         margin-bottom: 24px;
+         box-shadow: none;
+         &::placeholder {
+            color: var(--theme-secondary-color);
+         }
+         &:focus {
+            border: 1px solid var(--button-primary-bg-color);
+         }
+      }
+   }
+}

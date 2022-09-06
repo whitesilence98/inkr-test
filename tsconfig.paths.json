@@ -1,0 +1,26 @@
+{
+   "compilerOptions": {
+      "paths": {
+         "@context": ["context"],
+         "@context/*": ["context/*"],
+         "@constants": ["constants"],
+         "@constants/*": ["constants/*"],
+         "@styles": ["styles"],
+         "@styles/*": ["styles/*"],
+         "@components": ["components"],
+         "@components/*": ["components/*"],
+         "@locales": ["locales"],
+         "@locales/*": ["locales/*"],
+         "@models": ["models"],
+         "@models/*": ["models/*"],
+         "@services": ["services"],
+         "@services/*": ["services/*"],
+         "@assets": ["assets"],
+         "@assets/*": ["assets/*"],
+         "@my-store": ["store"],
+         "@my-store/*": ["store/*"],
+         "@utils": ["utils"],
+         "@utils/*": ["utils/*"]
+      }
+   }
+}

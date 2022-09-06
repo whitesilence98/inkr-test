@@ -1,0 +1,19 @@
+.root {
+   display: flex;
+   flex-wrap: wrap;
+   color: var(--primary-text);
+   gap: 32px;
+
+   .main,
+   .side {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   .main {
+      flex: 2;
+   }
+   .side {
+      flex: 1;
+   }
+}

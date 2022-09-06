@@ -1,0 +1,99 @@
+.button {
+   :global {
+      span {
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 22px;
+         color: black;
+      }
+
+      .ant-btn {
+         line-height: 1.5715;
+         position: relative;
+         display: flex;
+         font-weight: 400;
+         white-space: nowrap;
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         background-image: none;
+         box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+         cursor: pointer;
+         -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         touch-action: manipulation;
+         height: 32px;
+         padding: 4px 15px;
+         font-size: 14px;
+         border-radius: 8px;
+         color: rgba(255, 255, 255, 0.85);
+         border: 1px solid #434343;
+         background: transparent;
+         box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+         gap: 8px;
+         &:hover {
+            opacity: 0.9;
+         }
+      }
+
+      .ant-btn[disabled],
+      .ant-btn[disabled]:hover,
+      .ant-btn[disabled]:focus,
+      .ant-btn[disabled]:active {
+         border-color: lightgray;
+         background: lightgray;
+         span {
+            color: black;
+         }
+      }
+
+      .ant-btn-primary {
+         border-color: var(--button-primary-color);
+         background: var(--button-primary-bg-color);
+      }
+
+      .ant-btn-default,
+      .ant-btn-dashed,
+      .ant-btn-link {
+         background: #1f1f1f;
+         border: 1px solid #434343;
+         transition: all 0.5s ease-in;
+         span {
+            color: white;
+            transition: all 0.5s ease-in;
+         }
+         &:hover {
+            border: 1px solid var(--button-primary-bg-color);
+            span {
+               color: var(--button-primary-bg-color);
+            }
+         }
+      }
+   }
+
+   &_loading {
+      display: inline-flex;
+      width: 18px;
+      height: 18px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      animation: mb-loading 1s ease infinite;
+      margin-right: 4px;
+      border-left-color: #000;
+      border-top-color: #000;
+      border-bottom-color: #000;
+   }
+}
+
+@keyframes mb-loading {
+   from {
+      transform: rotate(0turn);
+   }
+   to {
+      transform: rotate(1turn);
+   }
+}
