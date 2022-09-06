@@ -1,6 +1,6 @@
 import React from "react";
 
-import {ChapterItem, ChapterLoading} from "@components/molecules";
+import {ChapterItem} from "@components/molecules";
 
 import {Chapter} from "@models/comic";
 
@@ -9,24 +9,7 @@ interface IChapterListProps {
 }
 
 const ChapterList = ({items}: IChapterListProps): JSX.Element => {
-   const [loading, setLoading] = React.useState(true);
-
-   React.useEffect(() => {
-      if (items.length) {
-         setTimeout(() => setLoading(false), 1000);
-      }
-   }, [items]);
-
    if (!items.length) return <></>;
-
-   if (loading)
-      return (
-         <>
-            {new Array(2).fill(1).map((_, index) => (
-               <ChapterLoading key={index.toString()} />
-            ))}
-         </>
-      );
 
    return (
       <>
@@ -38,6 +21,7 @@ const ChapterList = ({items}: IChapterListProps): JSX.Element => {
                height: "100vh",
                width: "100vw",
                background: "red",
+               zIndex: 1000,
             }}>
             Chapter
          </div> */}

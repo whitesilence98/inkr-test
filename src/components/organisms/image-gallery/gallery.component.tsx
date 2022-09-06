@@ -14,12 +14,7 @@ const ImageGallery = ({images}: IGalleryProps) => {
       <div className={classes["image-gallery"]}>
          <AntdImage.PreviewGroup>
             {images.map((image, index) => (
-               <Image
-                  key={index.toString()}
-                  height={126}
-                  src="https://i1.inkr.com/p/2022/7/25/3/925287-271.png/1600.webp"
-                  alt={image.alt}
-               />
+               <Image key={index.toString()} height={126} src={image.url} alt={image.alt} />
             ))}
          </AntdImage.PreviewGroup>
       </div>

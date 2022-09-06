@@ -13,17 +13,17 @@ const TAGS = [
 
 const CREDITS = [
    {
-      image: {url: "1", alt: "1"},
+      image: {url: "/images/1.png", alt: "normalAlt"},
       name: "Kodansha",
       role: "Publisher",
    },
    {
-      image: {url: "1", alt: "1"},
+      image: {url: "/images/2.png", alt: "normalAlt"},
       name: "Kodansha",
       role: "Publisher",
    },
    {
-      image: {url: "1", alt: "1"},
+      image: {url: "/images/3.png", alt: "normalAlt"},
       name: "Kodansha",
       role: "Publisher",
    },
@@ -54,11 +54,11 @@ const About = () => {
                <div className={classes["gallery"]}>
                   <ImageGallery
                      images={[
-                        {url: "1", alt: "1"},
-                        {url: "1", alt: "1"},
-                        {url: "1", alt: "1"},
-                        {url: "1", alt: "1"},
-                        {url: "1", alt: "1"},
+                        {url: "/images/1.png", alt: "normalAlt"},
+                        {url: "/images/2.png", alt: "normalAlt"},
+                        {url: "/images/3.png", alt: "normalAlt"},
+                        {url: "/images/4.png", alt: "normalAlt"},
+                        {url: "/images/4.png", alt: "normalAlt"},
                      ]}
                   />
                </div>

@@ -15,7 +15,7 @@ const CommentList = ({items}: IList): JSX.Element => {
 
    React.useEffect(() => {
       if (items.length) {
-         setTimeout(() => setLoading(false), 1000);
+         setTimeout(() => setLoading(false), 2000);
       }
    }, [items]);
 
