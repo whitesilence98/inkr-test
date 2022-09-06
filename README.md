@@ -1,3 +1,5 @@
+# Sorry i didn't have enought time to perfectly complete it :(
+
 #Next.js Inkr-test
 
 DEMO 👉 not availble
@@ -27,5 +29,3 @@ yarn dev
 ```
 
 The app should now be up and running at http://localhost:3000 🚀
-
-Sorry i didn't have enought time to perfectly complete it :(
