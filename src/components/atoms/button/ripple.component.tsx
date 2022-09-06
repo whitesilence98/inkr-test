@@ -17,6 +17,7 @@ const ButtonRipple = ({color}: {color: string}) => {
       ripples: [],
    });
 
+   // eslint-disable-next-line @typescript-eslint/no-explicit-any
    const handleRipple = (e: any) => {
       try {
          const ele = e.currentTarget.getBoundingClientRect();
@@ -29,6 +30,7 @@ const ButtonRipple = ({color}: {color: string}) => {
             ripples: [...prevState.ripples, {x, y, size, id}],
          }));
       } catch (e) {
+         // eslint-disable-next-line no-console
          console.log("WinLog 🐳🐳🐳 ~ e", e);
       }
    };
@@ -42,6 +44,7 @@ const ButtonRipple = ({color}: {color: string}) => {
 
    useEffect(() => {
       if (state.ripples.length > 0) {
+         // eslint-disable-next-line @typescript-eslint/no-explicit-any
          let timeoutId: any = null;
          if (state.ripples.length > 0) {
             clearTimeout(timeoutId);

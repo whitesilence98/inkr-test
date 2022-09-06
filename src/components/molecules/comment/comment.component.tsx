@@ -17,7 +17,9 @@ const CommentItem = memo(({item}: ICommentItem): JSX.Element => {
          <div className={classes["header"]}>
             <Avatar
                size={32}
-               src={<NextImage src="http://placecorgi.com/100" height={32} width={32} alt="null" />}
+               src={
+                  <NextImage src="/images/comment-avatar.png" height={32} width={32} alt="null" />
+               }
             />
             <div className={classes["content"]}>
                <p className={clsx(classes["user-name"], "text-secondary")}>Han Solo</p>

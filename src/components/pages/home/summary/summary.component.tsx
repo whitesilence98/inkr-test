@@ -61,7 +61,7 @@ const Summary = () => {
                   <h5 className={clsx(classes["content__chapter"], "text-primary")}>
                      Drama • 10 Chapters
                   </h5>
-                  <p className={classes["content__static"]}>Drama • 10 Chapters</p>
+                  {/* <p className={classes["content__static"]}>Drama • 10 Chapters</p> */}
                   <div className={classes["content__genres"]}>
                      <TagList tags={[...TAGS]} />
                   </div>

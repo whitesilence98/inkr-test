@@ -11,8 +11,8 @@ const ITEMS = [
       author: "PREQUEL",
       exclusived: true,
       image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
+         url: "/images/1.png",
+         alt: "related",
       },
    },
    {
@@ -22,8 +22,8 @@ const ITEMS = [
       author: "PREQUEL",
       exclusived: true,
       image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
+         url: "/images/2.png",
+         alt: "related",
       },
    },
    {
@@ -33,8 +33,8 @@ const ITEMS = [
       author: "PREQUEL",
       exclusived: true,
       image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
+         url: "/images/3.png",
+         alt: "related",
       },
    },
 ];

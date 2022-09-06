@@ -9,17 +9,11 @@ export const CommentBox = () => {
          <div className={classes["header"]}>
             <Avatar
                size={32}
-               src={<NextImage src="http://placecorgi.com/100" height={32} width={32} alt="null" />}
+               src={<NextImage src="/images/user-avatar.png" height={32} width={32} alt="null" />}
             />
          </div>
          <div className={classes["content"]}>
-            <Input.TextArea
-               rows={1}
-               autoSize
-               placeholder="Add your comment"
-               maxLength={6}
-               className={classes["content__input"]}
-            />
+            <Input placeholder="Add your comment" className={classes["content__input"]} />
             <Button type="primary">
                <svg
                   xmlns="http://www.w3.org/2000/svg"

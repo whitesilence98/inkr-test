@@ -2,17 +2,16 @@ import React from "react";
 import {NextPage} from "next";
 
 import {Seo} from "@components/atoms";
-import {MangaDetail} from "@components/pages";
+import {Home} from "@components/pages";
 
 import {getAnime} from "@services/anime.services";
 
 const SAMPLE_META = {
-   title: "Home",
-   siteName: "Home",
-   description:
-      "A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky",
-   url: "https://tsnext-tw.thcl.dev",
-   image: "https://theodorusclarence.com/favicon/large-og.jpg",
+   title: "INKR TEST",
+   siteName: "NKR TEST",
+   description: "description",
+   url: "url",
+   image: "image",
    type: "website",
    robots: "follow, index",
 };
@@ -28,7 +27,7 @@ const HomePage: NextPage = () => {
    return (
       <>
          <Seo {...SAMPLE_META} />
-         <MangaDetail />
+         <Home />
       </>
    );
 };

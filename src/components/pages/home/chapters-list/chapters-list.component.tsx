@@ -10,56 +10,17 @@ const ITEMS = [
    {
       name: "Chap 1",
       image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
+         url: "/images/chapter-thumbnail.png",
+         alt: "chapter",
       },
       isPaid: false,
    },
+
    {
       name: "Chap 2",
       image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
-      },
-      isPaid: false,
-   },
-   {
-      name: "Chap 2",
-      image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
-      },
-      isPaid: true,
-   },
-   {
-      name: "Chap 2",
-      image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
-      },
-      isPaid: true,
-   },
-   {
-      name: "Chap 2",
-      image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
-      },
-      isPaid: true,
-   },
-   {
-      name: "Chap 2",
-      image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
-      },
-      isPaid: true,
-   },
-   {
-      name: "Chap 2",
-      image: {
-         url: "http://placecorgi.com/200",
-         alt: "chap 1 of manga abc",
+         url: "/images/chapter-thumbnail.png",
+         alt: "chapter",
       },
       isPaid: true,
    },
